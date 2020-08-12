@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{477372F3-43E3-4C8E-B587-620EF50DB4F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Placer.Red32</RootNamespace>
+    <AssemblyName>Placer.Red32</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentScraper">
+      <HintPath>..\Libraries\FluentScraper.dll</HintPath>
+    </Reference>
+    <Reference Include="Http462">
+      <HintPath>..\Libraries\Http462.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkLib462">
+      <HintPath>..\Libraries\NetworkLib462.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Red32Placer.IPlacer2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Red32Web.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bet.Core\Betting.Core.csproj">
+      <Project>{6c208d62-8d50-4185-8847-d3d01123775f}</Project>
+      <Name>Betting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{83a4073c-5acd-4ab5-bd5d-9300ab1dd540}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{e1b942bf-a8ca-4311-ba85-152ce663bbeb}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Placer.BetslipContainer\Placer.BetslipContainer.csproj">
+      <Project>{f160054b-9090-41b9-9b23-b9e109d54c22}</Project>
+      <Name>Placer.BetslipContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Placer.Core\Placer.Core.csproj">
+      <Project>{7ec8fa06-eb7a-40a2-a1b6-bc686ebbe1c8}</Project>
+      <Name>Placer.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Placer.Ecambi\Placer.Ecambi.csproj">
+      <Project>{895c152e-d341-4089-9168-8e3147dfbe51}</Project>
+      <Name>Placer.Ecambi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Placer.WebCore\Placer.WebCore.csproj">
+      <Project>{3b1fda05-d7f6-4e58-b763-87f7f68c7889}</Project>
+      <Name>Placer.WebCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProxySupport\ProxySupport.csproj">
+      <Project>{3367f006-5d5d-4cc5-80c8-78562199dae6}</Project>
+      <Name>ProxySupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fingerPrintHash.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

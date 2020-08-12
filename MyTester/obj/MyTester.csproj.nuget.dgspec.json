@@ -1,0 +1,168 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\DISK_Reserve\\C#\\PlaceBetBot\\MyTester\\MyTester.csproj": {}
+  },
+  "projects": {
+    "F:\\DISK_Reserve\\C#\\PlaceBetBot\\MyTester\\MyTester.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\MyTester\\MyTester.csproj",
+        "projectName": "MyTester",
+        "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\MyTester\\MyTester.csproj",
+        "packagesPath": "C:\\Users\\dahun\\.nuget\\packages\\",
+        "outputPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\MyTester\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dahun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Bet.Core\\Betting.Core.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Bet.Core\\Betting.Core.csproj"
+              },
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Common\\Common.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Common\\Common.csproj"
+              },
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Logging\\Logging.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Logging\\Logging.csproj"
+              },
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.BetslipContainer\\Placer.BetslipContainer.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.BetslipContainer\\Placer.BetslipContainer.csproj"
+              },
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Core\\Placer.Core.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Core\\Placer.Core.csproj"
+              },
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Ecambi\\Placer.Ecambi.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Ecambi\\Placer.Ecambi.csproj"
+              },
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Sport888\\Placer.Sport888.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Sport888\\Placer.Sport888.csproj"
+              },
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.WebCore\\Placer.WebCore.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.WebCore\\Placer.WebCore.csproj"
+              },
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\ProxySupport\\ProxySupport.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\ProxySupport\\ProxySupport.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Ecambi\\Placer.Ecambi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Ecambi\\Placer.Ecambi.csproj",
+        "projectName": "Placer.Ecambi",
+        "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Ecambi\\Placer.Ecambi.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Sport888\\Placer.Sport888.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Sport888\\Placer.Sport888.csproj",
+        "projectName": "Placer.Sport888",
+        "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Sport888\\Placer.Sport888.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Ecambi\\Placer.Ecambi.csproj": {
+                "projectPath": "F:\\DISK_Reserve\\C#\\PlaceBetBot\\Placer.Ecambi\\Placer.Ecambi.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

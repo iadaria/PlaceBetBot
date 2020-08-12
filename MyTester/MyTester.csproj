@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="coverlet.collector" Version="1.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bet.Core\Betting.Core.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Logging\Logging.csproj" />
+    <ProjectReference Include="..\Placer.BetslipContainer\Placer.BetslipContainer.csproj" />
+    <ProjectReference Include="..\Placer.Core\Placer.Core.csproj" />
+    <ProjectReference Include="..\Placer.Ecambi\Placer.Ecambi.csproj" />
+    <ProjectReference Include="..\Placer.Sport888\Placer.Sport888.csproj" />
+    <ProjectReference Include="..\Placer.WebCore\Placer.WebCore.csproj" />
+    <ProjectReference Include="..\ProxySupport\ProxySupport.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Lucky\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Http462">
+      <HintPath>..\Libraries\Http462.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.SmartInspect">
+      <HintPath>..\Libraries\Microsoft.Extensions.Logging.SmartInspect.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkLib462">
+      <HintPath>..\Libraries\NetworkLib462.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

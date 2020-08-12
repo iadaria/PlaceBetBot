@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{895C152E-D341-4089-9168-8E3147DFBE51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Placer.Ecambi</RootNamespace>
+    <AssemblyName>Placer.Ecambi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Betting.Core">
+      <HintPath>C:\MyProgram\Work\c#\PlaceBetBot\Libraries\Betting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentScraper">
+      <HintPath>C:\MyProgram\Work\c#\PlaceBetBot\Libraries\FluentScraper.dll</HintPath>
+    </Reference>
+    <Reference Include="Http462">
+      <HintPath>C:\MyProgram\Work\c#\PlaceBetBot\Libraries\Http462.dll</HintPath>
+    </Reference>
+    <Reference Include="Logging">
+      <HintPath>C:\MyProgram\Work\c#\PlaceBetBot\Libraries\Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.0.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkLib462">
+      <HintPath>..\Libraries\NetworkLib462.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Placer.BetslipContainer">
+      <HintPath>C:\MyProgram\Work\c#\PlaceBetBot\Libraries\Placer.BetslipContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="Placer.Core">
+      <HintPath>C:\MyProgram\Work\c#\PlaceBetBot\Libraries\Placer.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Placer.WebCore">
+      <HintPath>C:\MyProgram\Work\c#\PlaceBetBot\Libraries\Placer.WebCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ProxySupport">
+      <HintPath>C:\MyProgram\Work\c#\PlaceBetBot\Libraries\ProxySupport.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BetslipHelper.cs" />
+    <Compile Include="EcambiPlacer.cs" />
+    <Compile Include="EcambiPlacer.IPlacer2.cs" />
+    <Compile Include="EcambiWeb.cs" />
+    <Compile Include="Helpers\Extension.cs" />
+    <Compile Include="Models\HorseInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\RaceInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
